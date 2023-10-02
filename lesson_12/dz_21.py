@@ -16,7 +16,6 @@ class Auto:
     def birthday(self):
         self.age += 1
 
-# Приклад використання класу Auto:
 car1 = Auto(brand='Toyota', age=3, mark='Camry', color='red', weight=1500)
 print(f"Car 1: Brand - {car1.brand}, Age - {car1.age}, Mark - {car1.mark}, Color - {car1.color}, Weight - {car1.weight}")
 car1.move()
