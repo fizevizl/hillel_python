@@ -1,4 +1,3 @@
-
 class Auto:
     def __init__(self, brand, age, mark, color='', weight=0):
         self.brand = brand
