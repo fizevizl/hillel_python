@@ -1,3 +1,5 @@
+import time
+
 class Auto:
     def __init__(self, brand, age, mark, color='', weight=0):
         self.brand = brand
@@ -25,7 +27,6 @@ class Truck(Auto):
         print("attention")
 
     def load(self):
-        import time
         time.sleep(1)
         print("load")
         time.sleep(1)
