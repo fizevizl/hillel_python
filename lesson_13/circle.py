@@ -42,6 +42,8 @@ class Circle(Point):
         return Circle(self.radius + other.radius, new.x, new.y)
 
     def __sub__(self, other):
+        self.x -= other.x
+        self.y -= other.y
         new_radius = abs(self.radius - other.radius)
         if new_radius == 0:
             return Point(self.x, self.y)
