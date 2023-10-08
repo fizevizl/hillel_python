@@ -5,7 +5,7 @@ class Car:
 
     def __init__(self, model, year, fuel_type, color):
         Car.NUMBER_OF_CARS += 1
-        
+
         if color not in Car.COLORS:
             Car.COLORS.append(color)
 
