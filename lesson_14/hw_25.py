@@ -4,14 +4,17 @@ class Car:
     NUMBER_OF_CARS = 0
 
     def __init__(self, model, year, fuel_type, color):
+        Car.NUMBER_OF_CARS += 1
+        
+        if color not in Car.COLORS:
+            Car.COLORS.append(color)
+
         self.model = model
         self.year = year
         self.color = color
         self.fuel_type = self.is_valid_fuel_type(fuel_type)
-        Car.NUMBER_OF_CARS += 1
         self.number = Car.NUMBER_OF_CARS
-        if color not in Car.COLORS:
-            Car.COLORS.append(color)
+        
 
     @staticmethod
     def is_valid_fuel_type(fuel_type):
